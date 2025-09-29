@@ -1,0 +1,26 @@
+Use Case 1: Đặt vé Festival
+- Actor: Khách tham dự
+- Mục tiêu: Người dùng mua vé festival online.
+- Tiền điều kiện: Người dùng đã đăng nhập.
+- Hậu điều kiện: Vé được ghi nhận trong hệ thống, gửi QR cho người dùng.
+- Luồng chính:
+ + Người dùng chọn sự kiện.
+ + Chọn số lượng vé.
+ + Hệ thống hiển thị tổng tiền.
+ + Người dùng chọn phương thức thanh toán.
+ + Payment Gateway xác nhận thanh toán thành công.
+ + Hệ thống gửi vé QR đến email/app của người dùng.
+- Luồng thay thế: Thanh toán thất bại → hiển thị thông báo lỗi, hủy đặt vé.
+
+Use Case 2: Quản lý sự kiện
+- Actor: Ban tổ chức
+- Mục tiêu: Ban tổ chức thêm hoặc chỉnh sửa thông tin sự kiện.
+- Tiền điều kiện: Organizer đã đăng nhập với quyền quản trị.
+- Hậu điều kiện: Sự kiện mới/đã chỉnh sửa được cập nhật trong hệ thống.
+- Luồng chính:
+ + Organizer chọn “Quản lý sự kiện”.
+ + Chọn “Thêm sự kiện” hoặc “Chỉnh sửa sự kiện”.
+ + Nhập thông tin: tên, địa điểm, ngày giờ, nghệ sĩ tham gia, giá vé.
+ + Lưu thông tin.
+ + Hệ thống hiển thị sự kiện mới trên website/app.
+- Luồng thay thế: Thông tin không hợp lệ (thiếu tên, giá vé âm, ngày không hợp lệ) → hệ thống báo lỗi.
