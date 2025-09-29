@@ -1,0 +1,29 @@
+Sơ đồ Use Case
+- Actors:
+Khách hàng (Customer)
+Ngân hàng/ATM System
+- Use case (chính trong quy trình rút tiền):
+Xác thực thẻ & PIN
+Nhập số tiền cần rút
+Kiểm tra số dư
+Xuất tiền mặt
+In biên lai (tùy chọn)
+Cập nhật tài khoản
+- Quan hệ:
+include: Kiểm tra số dư luôn nằm trong rút tiền.
+extend: In biên lai là tùy chọn.
+
+Sơ đồ Sequence
+- Đối tượng tham gia (lifelines):
+Khách hàng
+ATM (giao diện máy)
+Ngân  (xử lý nghiệp vụ & dữ liệu tài khoản)
+- Luồng thông điệp:
+ Chèn thẻ: Khách hàng đưa thẻ vào ATM.
+ Yêu cầu nhập PIN (hiển thị trên màn hình): ATM hiển thị yêu cầu khách hàng nhập mã PIN.
+ Nhập PIN: Khách hàng nhập PIN, ATM gửi PIN đến hệ thống Ngân hàng.
+ Xác thực: Ngân hàng xác thực thông tin thẻ + PIN, phản hồi kết quả về ATM.
+ Chọn rút tiền và nhập số tiền: Khách hàng chọn rút tiền và nhập số tiền yêu cầu.
+ Kiểm tra số dư: ATM gửi yêu cầu kiểm tra số dư đến Ngân hàng.
+ Xác nhận số dư hợp lệ: Ngân hàng phản hồi số dư hợp lệ.
+ Phát tiền mặt: ATM phát tiền cho khách hàng.
