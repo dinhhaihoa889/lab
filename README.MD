@@ -1,10 +1,5 @@
 # 🧪 Lab08 – Kiểm thử phần mềm ATM
 
-## 🎯 Mục tiêu
-Thực hành viết Unit Test và Integration Test cho hệ thống ATM, bao gồm kiểm tra logic rút tiền và xác thực đăng nhập qua form HTML.
-
----
-
 ## 🛠️ Công nghệ sử dụng
 
 - **Java 8**
@@ -80,9 +75,3 @@ mvn clean test
 - `integration_test_results.png` – ảnh chụp kết quả Integration Test
 
 ---
-
-## 🧑‍💻 Thông tin sinh viên
-
-- **Họ tên:** Vương Thị Hương Giang  
-- **MSSV:** N23DCPT017  
-- **Lớp:** Nhập môn Công nghệ phần mềm 
